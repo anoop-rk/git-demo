@@ -45,7 +45,11 @@ output application/json
 		<logger level="INFO" doc:name="Logger" doc:id="ae816947-df38-4af2-be97-32512f9a1589" />
 	<flow name="ak-main-flow" doc:id="0d9f14e0-5985-4e8a-9bdb-6bf438381663" >
 		<logger level="INFO" doc:name="Logger" doc:id="6fb3bb03-067b-4c59-8105-06344191fef6" />
-	<flow name="mainFlow" doc:id="6c553a01-0c08-4802-9b0d-d857e4477363" >
+	<flow name="yk-main-Flow" doc:id="6c553a01-0c08-4802-9b0d-d857e4477363" >
 		<logger level="INFO" doc:name="Logger" doc:id="33673fcb-1cfd-43f0-bbc5-fbe8b6b7f25d" message="YK-main-flow"/>
+	</flow>
+</flow></flow>
+	<flow name="test-main-flow" doc:id="d3471981-bff2-4bab-a501-a9f9fbabe304" >
+		<logger level="INFO" doc:name="Logger" doc:id="19f5d38d-b34b-4999-86b2-b9c33ee2c7e1" />
 	</flow>
 </mule>
