@@ -41,4 +41,7 @@ output application/json
             </ee:message>
         </ee:transform>
 	</flow>
+	<flow name="mainFlow" doc:id="6c553a01-0c08-4802-9b0d-d857e4477363" >
+		<logger level="INFO" doc:name="Logger" doc:id="33673fcb-1cfd-43f0-bbc5-fbe8b6b7f25d" message="YK-main-flow"/>
+	</flow>
 </mule>
