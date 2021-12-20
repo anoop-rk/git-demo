@@ -43,5 +43,7 @@ output application/json
 	</flow>
 	<flow name="pk-main-flow" doc:id="5b7069c7-0bdd-4214-a026-41eb706bb086" >
 		<logger level="INFO" doc:name="Logger" doc:id="ae816947-df38-4af2-be97-32512f9a1589" />
+	<flow name="ak-main-flow" doc:id="0d9f14e0-5985-4e8a-9bdb-6bf438381663" >
+		<logger level="INFO" doc:name="Logger" doc:id="6fb3bb03-067b-4c59-8105-06344191fef6" />
 	</flow>
 </mule>
