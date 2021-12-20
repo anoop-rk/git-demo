@@ -49,6 +49,9 @@ output application/json
 		<logger level="INFO" doc:name="Logger" doc:id="33673fcb-1cfd-43f0-bbc5-fbe8b6b7f25d" message="YK-main-flow"/>
 	</flow>
 </flow></flow>
+	<flow name="teererre" doc:id="8e14cc43-1d5a-43cf-afaf-b6c24e278ee3" >
+		<logger level="INFO" doc:name="Logger" doc:id="552a02a9-2e9d-45eb-9c09-9d4ea15e635d" />
+	</flow>
 	<flow name="test-main-flow" doc:id="d3471981-bff2-4bab-a501-a9f9fbabe304" >
 		<logger level="INFO" doc:name="Logger" doc:id="19f5d38d-b34b-4999-86b2-b9c33ee2c7e1" />
 	</flow>
