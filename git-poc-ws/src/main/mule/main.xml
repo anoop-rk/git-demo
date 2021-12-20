@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<flow name="get-employess-flow" doc:id="8ced09f3-40d9-4fac-83f9-c36bd48d4198" >
+		<ee:transform xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+            <ee:message>
+                <ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+[
+  {
+    employeeId: "1234",
+    emailid: "jerry@gmail.com",
+    firstName: "jerry",
+    lastName: "joseph",
+    phoneNumber: "9048378192",
+    age: 24
+  }, 
+  {
+    employeeId: "1234",
+    emailid: "jerry@gmail.com",
+    firstName: "jerry",
+    lastName: "joseph",
+    phoneNumber: "9048378192",
+    age: 24
+  }
+]]]></ee:set-payload>
+            </ee:message>
+        </ee:transform>
+	</flow>
+</mule>

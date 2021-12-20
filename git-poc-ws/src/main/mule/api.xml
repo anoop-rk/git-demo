@@ -154,31 +154,7 @@ output application/json
         </ee:transform>
     </flow>
     <flow name="get:\employees:apix-generic-db-sapi-config">
-        <ee:transform xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
-            <ee:message>
-                <ee:set-payload><![CDATA[%dw 2.0
-output application/json
----
-[
-  {
-    employeeId: "1234",
-    emailid: "jerry@gmail.com",
-    firstName: "jerry",
-    lastName: "joseph",
-    phoneNumber: "9048378192",
-    age: 24
-  }, 
-  {
-    employeeId: "1234",
-    emailid: "jerry@gmail.com",
-    firstName: "jerry",
-    lastName: "joseph",
-    phoneNumber: "9048378192",
-    age: 24
-  }
-]]]></ee:set-payload>
-            </ee:message>
-        </ee:transform>
+		<flow-ref doc:name="Flow Reference" doc:id="64683050-a3f3-440b-b051-910735433c3f" name="get-employess-flow" />
     </flow>
     <flow name="get:\employee\(id):apix-generic-db-sapi-config">
         <ee:transform xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core">

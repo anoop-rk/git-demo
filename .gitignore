@@ -12,3 +12,4 @@ buildNumber.properties
 .metadata/
 .mule/
 .tooling/
+.tooling-apps-cache/
