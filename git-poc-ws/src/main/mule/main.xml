@@ -41,4 +41,7 @@ output application/json
             </ee:message>
         </ee:transform>
 	</flow>
+	<flow name="pk-main-flow" doc:id="5b7069c7-0bdd-4214-a026-41eb706bb086" >
+		<logger level="INFO" doc:name="Logger" doc:id="ae816947-df38-4af2-be97-32512f9a1589" />
+	</flow>
 </mule>
