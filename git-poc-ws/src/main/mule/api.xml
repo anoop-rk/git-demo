@@ -179,13 +179,6 @@ output application/json
         </ee:transform>
     </flow>
     <flow name="post:\employees:application\json:apix-generic-db-sapi-config">
-        <ee:transform xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
-            <ee:message>
-                <ee:set-payload><![CDATA[%dw 2.0
-output application/json
----
-"Successfully created the employee"]]></ee:set-payload>
-            </ee:message>
-        </ee:transform>
+		<flow-ref doc:name="Flow Reference" doc:id="6fa0196e-8926-43b6-ac75-d8c012435713" name="post-employess-flow" />
     </flow>
 </mule>
